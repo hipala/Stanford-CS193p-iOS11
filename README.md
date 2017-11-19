@@ -35,7 +35,7 @@ Stanford University's CS193p [on iTunesU](https://itunes.apple.com/vn/course/dev
 
 老師的教學很好，會先用比較簡單好理解的方式寫過，「恩恩沒錯就是這樣」，再用進階的短方法讓人感到「哇！」還有這招啊，如果看不懂會按暫停懷著受挫的心情想著「剛剛發生事ヾ(;ﾟ;Д;ﾟ;)ﾉﾞ」陷入沈默，「難道我過去的付出都是浮雲嗎！？為什麼第二堂課就跟不上了啊啊啊」
 
-是的，原先可能以為是湖泊，慢慢的會發現是一望無際的海洋。
+原先可能以為是湖泊，慢慢的會發現是一望無際的海洋。
 
 但我是第二輪了所以還好。替翻牌遊戲加入更彈性的擴充和比對功能。
 
@@ -61,13 +61,13 @@ Swift語言介紹，大多是投影片解釋，實際寫程式的練習時間很
 
 ## Lecture 4: More Swift
 
-Protocols和Closures，重量級登場「碰～（效果音）」
+Protocols和Closures，重量登場「碰～（效果音）」
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/protocols.jpg)
 
 Protocols就像網紅，我們在接觸新領域時往往很快就能發現代表人物，雖然很快的能叫出名字，但是隨著揭露不同面向也會有更深層的體悟。在介紹完相關知識後，老師簡單的透過三張投影片帶出Delegation，還沒有實際放出來虐人，覺得溫馨。
 
-可以看到Protocol裡並沒有實際描述函式的內容，就像教練下達戰術，細節球員自行發揮。什麼？你說這樣只出一張嘴不負責任，還讓你聯想到慘痛的經歷...拍拍(´;ω;`)ヾ(･∀･`)
+可以看到Protocol裡並沒有實際描述函式的內容，就像教練下達戰術，細節球員自行發揮。什麼？你說這樣只出一張嘴不負責任，還讓你聯想到慘痛的經歷...拍拍(´;ω;`)ヾ(･∀･` )
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/Lecture-4.png)
 
@@ -84,3 +84,36 @@ Protocols就像網紅，我們在接觸新領域時往往很快就能發現代�
 嗯花了幾個月爬到的地方，CS193p第四堂進度就推到這裡了，想到有句話說「你以為的進步，只是別人的起點」。
 
 有點惆悵(´ー`)。
+
+
+## Lecture 5: Drawing
+
+喜歡看影片配飯吃的朋友們，這堂只有最後20分鐘開Xcode寫程式，前面都在透過投影片講解概念，不會吃得手忙腳亂。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/Lecture-5.jpg)
+
+講解View的相關概念：View是矩形區域，可以想成空白的畫布；一個View只能有一個superview，但是可以有很多subviews或沒有。覺得文字抽象，可以想兄弟姐妹只會有一個媽媽，但是媽媽都要照顧他們。
+
+帶出CGFloat、CGPoint、CGSize、CGRect畫圖的座標系概念。CG這兩個字解壓縮（？）後是[Core Graphics](https://developer.apple.com/documentation/coregraphics)，彼此是有關聯的。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/bounds.jpg)
+
+bounds和frame的差別。要注意View原點（0, 0）是在左上角，不是以前數學課本教的左下角、Y軸往下是正、往上是負。
+
+綠色矩形View B，bounds是（（0, 0）, (200, 250)）座標原點在左上角，不會因為旋轉而改變，活在自己的世界中。
+
+而View B's frame要包住這個綠色矩形，所以是圖中的白線區域（(140, 65), (320, 320)）；View B's center是看frame中心座標，X軸是140＋（320/2）= 300、Y軸是65＋(320/2) = 225。
+
+View B's bounds和middle只看綠色矩形無關外在；View B's frame和center看包裹綠色矩形的白色矩形（雖然畫面只有兩根白線）。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/bezierPath.jpg)
+
+接著說明貝茲曲線UIBezierPath()的作圖方式替下堂課暖身。
+
+
+
+
+
+
+
+
