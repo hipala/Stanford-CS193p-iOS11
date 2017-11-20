@@ -128,7 +128,7 @@ View B's bounds和middle只看綠色矩形無關外在；View B's frame和center
 
 前面1小時都在畫圖，後面教觸碰功能：滑動翻牌、放大、點擊蓋牌。分別對應UISwipeGestureRecognizer、UIPinchGestureRecognizer、UITapGestureRecognizer。
 
-相關連結：[UIKit之UIFont]（http://www.jianshu.com/p/2dd3e144d759）、[UIKit之UIView](http://www.jianshu.com/p/9cec015e6e11)、[CGRectInset的使用方法](http://www.jianshu.com/p/82a9d1ce8157)。
+相關連結：[UIKit之UIFont](http://www.jianshu.com/p/2dd3e144d759)、[UIKit之UIView](http://www.jianshu.com/p/9cec015e6e11)、[CGRectInset的使用方法](http://www.jianshu.com/p/82a9d1ce8157)。
 
 
 
