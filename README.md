@@ -2,6 +2,8 @@
 
 Stanford University's CS193p [on iTunesU](https://itunes.apple.com/vn/course/developing-ios-11-apps-with-swift/id1309275316) 
 
+Fall 2017-18 (based on iOS 11 and Swift 4) 
+
 觀看CS193p秋季新課程當第二輪複習，吸收先前還無法領悟的環節。
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/CS193p.png)
@@ -107,7 +109,7 @@ View B's bounds和middle只看綠色矩形無關外在；View B's frame和center
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/bezierPath.jpg)
 
-網友在iOS8做的相關筆記很詳細：[Custom Views視圖繪製]（blog.csdn.net/cg1991130/article/details/45046431）、[Drawing繪製、UIColor顏色、Fonts字體]（http://blog.csdn.net/cg1991130/article/details/45055797）。
+網友在iOS8做的相關筆記很詳細：[Custom Views視圖繪製](http://blog.csdn.net/cg1991130/article/details/45046431)、[Drawing繪製、UIColor顏色、Fonts字體](http://blog.csdn.net/cg1991130/article/details/45055797)。
 
 接著說明貝茲曲線UIBezierPath()的作圖方式替下堂課暖身。
 
@@ -120,13 +122,13 @@ View B's bounds和middle只看綠色矩形無關外在；View B's frame和center
 
 從頭到尾都在寫程式，建議預留兩倍以上的時間。因為其中有兩段老師為了節省時間直接貼預先準備好的程式碼，要按暫停自己把內容打在Xcode上；之後課程繼續，發現結果長的不同，我很克難的從影片各時間區間比對程式碼，反覆查找快2個小時才發現是錯在這邊(´_ゝ`)
 
-因為老師是直接貼上，簡單帶過前後出現在畫面不到10秒吧。不過定位問題的經驗又再度增加也是好事(≖＿≖)✧
+因為老師是直接貼上，簡單帶過前後出現在畫面不到10秒吧。不過定位問題的經驗增加也是好事(≖＿≖)✧
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/playingCard.png)
 
 前面1小時都在畫圖，後面教觸碰功能：滑動翻牌、放大、點擊蓋牌。分別對應UISwipeGestureRecognizer、UIPinchGestureRecognizer、UITapGestureRecognizer。
 
-相關連結：[UIKit之UIFont]（http://www.jianshu.com/p/2dd3e144d759）、[UIKit之UIView](http://www.jianshu.com/p/9cec015e6e11)、[CGRectInset的使用方法]（http://www.jianshu.com/p/82a9d1ce8157）。
+相關連結：[UIKit之UIFont]（http://www.jianshu.com/p/2dd3e144d759）、[UIKit之UIView](http://www.jianshu.com/p/9cec015e6e11)、[CGRectInset的使用方法](http://www.jianshu.com/p/82a9d1ce8157)。
 
 
 
