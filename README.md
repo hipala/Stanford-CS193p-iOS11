@@ -131,9 +131,27 @@ View B's bounds和middle只看綠色矩形無關外在；View B's frame和center
 相關連結：[UIKit之UIFont](http://www.jianshu.com/p/2dd3e144d759)、[UIKit之UIView](http://www.jianshu.com/p/9cec015e6e11)、[CGRectInset的使用方法](http://www.jianshu.com/p/82a9d1ce8157)。
 
 
+## Lecture 7: Multiple MVCs, Timer and Animation
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/Lecture-7.png)
+
+加入更多MVC改進之前的遊戲，包含Navigation、SplitView(45分開始)、TabBar（51分開始），在iPad跟iPhone都有對應的體驗；因為時間關係並沒有講到動畫部分，算是較為輕鬆的主題，沒有太多寫程式的部分。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/Lecture-7_2.png)
+
+特別要注意的是每次Segue都會到一個重新創造的新頁面，返回的時間舊有的畫面也隨之消失。
+
+比如第一次是A到B1，返回後B1隨之消失，第二次從A連過去出現的是新的B2，所以如果在B1有做更動，會發現第二次進去被還原重置了，因為出現的是B2。但是「Back」並不是Segue，所以沒有這個問題，可以想像成A是被壓在下面的卡片，B1、B2是蓋上去又被收走的卡片比較好懂。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/Lecture-7_3.png)
+
+轉場的膠水代碼，記得在Storyboard的identifier要命名。
 
 
+## Lecture 8: Animation
 
+講動畫、物理碰撞、Memory Cycle。
 
+從Lecture 1到現在投影片最後的Demo code連結都無法點選使用，之前的問題不大，但這堂沒有示範代碼有點難跟著上啊。
 
 
