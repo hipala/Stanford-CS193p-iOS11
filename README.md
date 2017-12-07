@@ -4,7 +4,7 @@ Stanford University's CS193p [on iTunesU](https://itunes.apple.com/vn/course/dev
 
 Fall 2017-18 (based on iOS 11 and Swift 4) 
 
-觀看CS193p秋季新課程當第二輪複習，吸收先前還無法領悟的環節。
+觀看CS193p秋季新課程第二輪複習，在自學程式與尋找iOS職缺的路上。
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/CS193p.png)
 
@@ -152,6 +152,36 @@ View B's bounds和middle只看綠色矩形無關外在；View B's frame和center
 
 講動畫、物理碰撞、Memory Cycle。
 
-從Lecture 1到現在投影片最後的Demo code連結都無法點選使用，之前的問題不大，但這堂沒有示範代碼有點難跟著上啊。
+從Lecture 1到現在投影片最後的Demo code連結都無法點選使用，至少在上一季都會附上課堂的實作檔案；之前的問題不大，但這堂沒有起始專案有點難跟著上啊(›´ω`‹ )。
 
+
+## Lecture 9: View Controller Lifecycle and Scroll View
+
+前26分鐘說明Lifecycle，後面示範如何用Storyboard和程式碼使用Scroll View。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/Lifecycle_0.png)
+
+老師開頭就拉入一個VCLLoggingViewController檔案，執行後直接說明；因為這部分有印象，所以我回頭翻上一季Demo程式碼，配合螢幕上的最新內容修改，克難的完成了（好險）。在程式碼內我有註解哪邊是這次變更的。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/Lifecycle_1.png)
+
+在執行專案時，會印出Lifecycle的變動。可以看到在遊戲頁的Game（2）重新進入後是消失的，取而代之的是重置後的Game（3），而選擇主題的頁面從頭到尾都是ThemeChooser（1）沒有變動。
+
+搭配投影片理解出現的順序。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/Lifecycle_2.png)
+
+iPad開始是橫向的，轉直後會看到第二大段的ThemeChooser進入到viewWillDisappear、以viewDidAppear收尾，因為直立時邊欄會自動縮起來。第三大段我手動把邊欄滑出來，所以會看到ThemeChooser執行viewWillAppear到viewDidAppear。
+
+第四第五段，分別是往左滑讓邊欄消失、又往右滑讓邊欄出現。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/ScrollView_1.png)
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/ScrollView_2.png)
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/ScrollView_3.png)
+
+UIScrollView平常教學好像比較少看到，從1:00:14是示範透過Storyboard完成，記得在ImageView設定Intrinsic Size把Default改為Placeholder消除紅線警示；1:07:00開始是使用程式碼完成，按住option加滑鼠可以模擬兩指縮放。
+
+圖片是我自己找的風景圖(　˙灬˙　)
 
