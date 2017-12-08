@@ -200,13 +200,13 @@ UIScrollView平常教學好像比較少看到，從1:00:14是示範透過Storybo
 
 這節課重點就是截圖的這些程式碼了。
 
-![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/connect error_1.png)
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/connect_error_1.png)
 
-![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/connect error_2.png)
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/connect_error_2.png)
 
 如果按照影片中的步驟操作，會撞到錯誤NSURLConnection finished with error - code -1022，因為圖片位置是http而不是https，要到plist允許放行，如上圖修復。
 
-![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/size classes.png)
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/size_classes.png)
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/rotation.gif)
 
