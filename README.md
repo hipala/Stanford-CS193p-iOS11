@@ -22,7 +22,7 @@ Fall 2017-18 (based on iOS 11 and Swift 4)
 下一堂課學習曲線突然陡升。
 
 
-## Lecture 2: MVC's
+## Lecture 2: MVC
 
 說明Model-View-Controller(MVC)模式。
 
@@ -184,4 +184,34 @@ iPad開始是橫向的，轉直後會看到第二大段的ThemeChooser進入到v
 UIScrollView平常教學好像比較少看到，從1:00:14是示範透過Storyboard完成，記得在ImageView設定Intrinsic Size把Default改為Placeholder消除紅線警示；1:07:00開始是使用程式碼完成，按住option加滑鼠可以模擬兩指縮放。
 
 圖片是我自己找的風景圖(　˙灬˙　)
+
+
+## Lecture 10: Multithreading and Autolayout
+
+前半部分講Multithreading，從48分開始說明Autolayout的Size Class功能。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/multithreading_1.png)
+
+關於UI的互動必須要在主線程執行，資料下載可以放到背景跑才不會讓畫面因為等待而凍結住。
+
+可以搭配[Grand Central Dispatch (GCD) and Dispatch Queues in Swift 3](https://www.appcoda.com/grand-central-dispatch/)[(中文翻譯)](https://www.appcoda.com.tw/grand-central-dispatch/)、[Intro to Grand Central Dispatch in Swift 4 with Bob](https://blog.bobthedeveloper.io/intro-to-grand-central-dispatch-in-swift-3-with-bob-lee-1d4b56f731b3)閱讀，如果是第一次看到這些卡住是很正常的！
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/multithreading_2.png)
+
+這節課重點就是截圖的這些程式碼了。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/connect error_1.png)
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/connect error_2.png)
+
+如果按照影片中的步驟操作，會撞到錯誤NSURLConnection finished with error - code -1022，因為圖片位置是http而不是https，要到plist允許放行，如上圖修復。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/size classes.png)
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/rotation.gif)
+
+Size Class的練習，讓直立是4X5、橫放是5X4，並在轉換時重新配置卡片位置。
+
+因為直立時最下方那排橫放會消失，橫放轉直立最右邊那排會消失，如果沒有另外設定，那幾張點開的卡片在新畫面會不存在。啊，怎麼能被邊緣化呢，把手手牽起來～
+
 
