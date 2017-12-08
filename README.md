@@ -208,9 +208,11 @@ UIScrollView平常教學好像比較少看到，從1:00:14是示範透過Storybo
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/size_classes.png)
 
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/traitCollectionDidChange.png)
+
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/rotation.gif)
 
-Size Class的練習，讓直立是4X5、橫放是5X4，並在轉換時重新配置卡片位置。
+Size Class的練習，讓直立是4X5、橫放是5X4，並在轉換時重新配置卡片和計數器位置。
 
 因為直立時最下方那排橫放會消失，橫放轉直立最右邊那排會消失，如果沒有另外設定，那幾張點開的卡片在新畫面會不存在。啊，怎麼能被邊緣化呢，把手手牽起來～
 
