@@ -152,7 +152,7 @@ View B's bounds和middle只看綠色矩形無關外在；View B's frame和center
 
 講動畫、物理碰撞、Memory Cycle。
 
-從Lecture 1到現在投影片最後的Demo code連結都無法點選使用，至少在上一季都會附上課堂的實作檔案；之前的問題不大，但這堂沒有起始專案有點難跟著上啊(›´ω`‹ )。
+從Lecture 1到現在投影片最後的Demo code連結都無法點選使用，至少在上一季都會附上課堂的實作檔案；之前的問題不大，但這堂沒有起始專案有點難跟著上啊(›´ω`‹ )。先前我有整理[iOS動畫學習資源](http://pala.tw/algorithm-and-ios-animation/#middle)，包含簡書優文和YouTube推薦頻道。
 
 
 ## Lecture 9: View Controller Lifecycle and Scroll View
@@ -198,13 +198,15 @@ UIScrollView平常教學好像比較少看到，從1:00:14是示範透過Storybo
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/multithreading_2.png)
 
-這節課重點就是截圖的這些程式碼了。
+這節課重點就是截圖的這些程式碼了，spinner是等待讀取的轉圈圈。
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/connect_error_1.png)
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/connect_error_2.png)
 
-如果按照影片中的步驟操作，會撞到錯誤NSURLConnection finished with error - code -1022，因為圖片位置是http而不是https，要到plist允許放行，如上圖修復。
+如果按照影片中的步驟操作，會撞到錯誤NSURLConnection finished with error - code -1022，因為圖片位置是http而不是https，要到plist（property list）允許放行，如上圖修復；關於[Info.plist科普說明](https://zhuanlan.zhihu.com/p/30597493)，與App設置有關，例如詢問用戶拍照權限的相關文字也是在此設定。
+
+也帶到Outlet和prepareForSegue執行先後易犯的錯誤，可參考我在Lecture 7摘要的最後一張投影片紅字。
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/size_classes.png)
 
