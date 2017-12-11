@@ -4,7 +4,7 @@ Stanford University's CS193p [on iTunesU](https://itunes.apple.com/vn/course/dev
 
 Fall 2017-18 (based on iOS 11 and Swift 4) 
 
-觀看CS193p秋季新課程第二輪複習，在自學程式與尋找iOS職缺的路上。
+CS193p秋季新課程，在自學轉iOS開發的路上，並持續在[個人臉書](https://www.facebook.com/profile.php?id=1435728983)分享各領域學習心得。
 
 ![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/CS193p.png)
 
@@ -218,4 +218,16 @@ Size Class的練習，讓直立是4X5、橫放是5X4，並在轉換時重新配�
 
 因為直立時最下方那排橫放會消失，橫放轉直立最右邊那排會消失，如果沒有另外設定，那幾張點開的卡片在新畫面會不存在。啊，怎麼能被邊緣化呢，把手手牽起來～
 
+
+## Lecture 11: Drag and Drop, Table View and Collection View
+
+這節開始做iPad新專案，前半部分教拖拉功能，把Google搜尋到的圖片拖進App裡當背景；從33分開始說明Table View和Collection View的投影片，實作完Table View部分結束。
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/drop.png)
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/tableVIew_1.png)
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/tableVIew_2.png)
+
+![](https://github.com/hipala/Stanford-CS193p/blob/master/screenshot/tableVIew_3.png)
 
